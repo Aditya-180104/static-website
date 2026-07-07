@@ -1,11 +1,10 @@
 version: 0.2
-
+ 
 phases:
   build:
     commands:
-      - echo Deploying Website
-      - aws s3 sync website/ s3://aditya-static-site-demo-180104 --delete
-
+      - echo "Build Started"
+ 
 artifacts:
   files:
     - '**/*'
